@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+      background: #a51969;
+      font-family: 'open sans';
+}
+nav {
+	display: flex;
+	aling-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+/*Logo*/
+
+.logo{
+	color: whitesmoke;
+	font-size: 35px;
+	letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+
+span{
+	color: hotpink;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 25px;
+}
+
+nav ul li a{
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+    font-size: 23px;
+    font-family: 'open sans';
+    
+}
+
+nav ul li a:hover{
+	color: hotpink;
+	transition: .4s;
+}
+
+.btn{
+	background-color: hsla(146,50%,36%,0.55);
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s;
+}
+
+.btn:hover{
+	transform: scale(1.2);
+}
+
+.content{
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	transform: translateY(-50%);
+}
+
+.galeria{
+	font-family: 'open sans'
+}
+
+.galeria h1{
+	text-align: center;
+	margin: 20px 0 25px 0;
+	font-weight: 500;
+    color:whitesmoke;
+    font-size: 50px;
+}
+.linea{
+	border-top: 5px solid rgba(255, 255, 255, 1);
+	margin-bottom: 20px;
+}
+.contenedor-img{
+	display: flex;
+	width: 85%;
+	margin: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius: 3px;
+}
+
+.contenedor-img .img{
+	width: 32%;
+	position: relative;
+	height: 250px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,.75);
+}
+
+.img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(130, 67, 120, 0.77) ;
+	width: 100%;
+	height: 0%;
+	transition: .7s ease;
+	overflow: hidden;
+}
+
+.overlay h3{
+	color: white;
+	font-size: 30px;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	
+}
+
+.img:hover .overlay{
+	height: 100%;
+	cursor: pointer;
+}
+
+.overlay h3 a{
+	text-decoration: none;
+	color: white;
+}
